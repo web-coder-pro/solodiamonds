@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="log_style.css">
+</head>
+<body>
+
+<div class="admin-box">
+    <h1>USTOZMLBB ADMIN PANEL</h1>
+    <button onclick="logout()">Chiqish</button>
+
+    <h2>Buyurtmalar</h2>
+    <div class="order-box">
+        <input type="text" id="userId" placeholder="Foydalanuvchi ID">
+        <select id="package">
+            <option value="10">10 Almaz 💎</option>
+            <option value="50">50 Almaz 💎</option>
+            <option value="100">100 Almaz 💎</option>
+        </select>
+        <button onclick="addOrder()">Buyurtma qo'shish</button>
+    </div>
+
+    <ul id="ordersList"></ul>
+</div>
+
+<script src="log.js"></script>
+</body>
+</html>
